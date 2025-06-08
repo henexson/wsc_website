@@ -297,6 +297,9 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+  max-width: 100%; /* Allow full container width */
+  width: 100%;      /* Optional: forces full width */
+  display: block;   /* Ensures it behaves as block-level */
 }
 
 .slider_section .detail-box p {
