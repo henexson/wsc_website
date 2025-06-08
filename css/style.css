@@ -881,7 +881,7 @@ a:focus {
 
 /* Style for each accordion button (question title) */
 .accordion-button {
-  font-size: .875rem;
+  font-size: 1rem;
   border-bottom: 1px solid var(--bs-border-color);
 }
 
