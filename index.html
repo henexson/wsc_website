@@ -311,23 +311,35 @@
       <div class="row">
         
         <!-- Contact Form -->
-        <div class="col-lg-5 mb-4" data-aos="fade-up">
-          <h3 class="fw-medium">Contact Us</h3>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="John Doe">
+        <div class="col-lg-5">
+          <div class="left-content" data-aos="fade-up">
+            <div class="element-header align-left mb-4">
+              <h3 class="fw-medium">
+                Send us a message — we're excited to hear from you!
+              </h3>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+  
+            <form id="contact-form" action="https://formspree.io/f/xqaqwrkq" method="POST" class="form-group">
+              <div class="pb-2">
+                <input type="text" name="name" placeholder="Your Full Name" class="form-control" required />
+              </div>
+              <div class="pb-2">
+                <input type="email" name="email" placeholder="Your Email Address" class="form-control" required />
+              </div>
+              <div class="pb-2">
+                <input type="tel" name="phone" placeholder="Your Phone Number" class="form-control" required />
+              </div>
+              <div class="pb-2">
+                <textarea name="message" placeholder="Your Message" rows="6" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+            </form>
+            
+            <!-- Success Message Placeholder -->
+            <div id="form-status" class="mt-3 text-success fw-bold" style="display: none;">
+              ✅ Thank you! Your message has been sent.
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+          </div>
         </div>
   
         <!-- FAQ Section -->
